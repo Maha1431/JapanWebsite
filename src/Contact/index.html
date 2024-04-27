@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design a Job Search Portal using HTML and CSS</title>
+
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Job Search Portal</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="../Job/joblistings.html">Jobs</a></li>
+        <li><a href="../Job/joblistings.html">Companies</a></li>
+        <li><a href="../About/about.html">About Us</a></li>
+        <li><a href="./index.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="search">
+      <h2>Find Your Dream Job</h2>
+      <form action="#" method="get">
+        <input type="text" name="keywords" placeholder="Keywords" />
+        <input type="text" name="location" placeholder="Location" />
+        <input type="text" name="company" placeholder="Company" />
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <!-- Contact form -->
+    <section class="contact-form">
+      <div class="form-container">
+        <h2>Your Details</h2>
+        <form action="#" method="POST">
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email: </label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone: </label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="message">Message: </label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2023 Job Search Portal</p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
