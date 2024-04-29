@@ -33,12 +33,9 @@ function renderJobListings(jobListings) {
 function createJobListingElement(job) {
   const li = document.createElement("li");
   const html = `
-  <img class='image' src='${job.imageUrl}' alt='Job Image'>
-    <h3>${job.title}</h3>
-    <p>Company: ${job.category}</p>
-    <p>Location: ${job.location}</p>
-    <a href="#">Apply Now</a>
-  `;
+        <p>${job.category}</p>
+      
+      `;
   li.innerHTML = html;
   return li;
 }
